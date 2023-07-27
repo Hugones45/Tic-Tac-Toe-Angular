@@ -1,0 +1,21 @@
+<div class="separation">
+    <h1>Current Player: {{player}}</h1>
+
+    <div class="forInput">
+        <input type="submit" value="Star New Game" (click)="newGame()" />
+    </div>
+
+    <h2 *ngIf="winner">
+        Player {{winner}} won the game!
+    </h2>
+</div>
+
+<div class="setPlace">
+    <main>
+        <app-square *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)">
+
+
+
+        </app-square>
+    </main>
+</div>

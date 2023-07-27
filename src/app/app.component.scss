@@ -1,0 +1,18 @@
+.background {
+    background: linear-gradient(to right,
+            rgb(100, 166, 199),
+            rgb(36, 47, 151),
+            rgb(232, 56, 56));
+    height: 100vh;
+
+}
+
+app-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+
+}
